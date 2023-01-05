@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
+@font-face {
+    font-family: "COCOGOOSE";
+    src:
+      local("Cocogoose_trial"),
+      url("../font/cocogoose/Cocogoose_trial.ttf");
+}
+
 :root {
     --primary-color: #ec5242;
     --secondary-color: #272a31;
@@ -50,17 +57,67 @@ h1,h2,h3,h4,h5,h6 {
     display: flex;
 }
 
+.text-center {
+    text-align: center;
+}
+
+/* buttons  */
+
 .btn {
     display: inline-flex;
     padding: 8px 12px;
-    background: #fff;
-    border: 5px solid var(--primary-color);
     font-weight: 500;
     font-size: 15px;
     line-height: 24px;
     cursor: pointer;    
-    color: var(--primary-color);
     transition: all 500ms linear;
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn-primary{
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: #fff;
+    padding: 20px 38px !important;
+}
+
+.btn-outline-primary{
+    background: #fff;
+    border: 5px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* heading  */
+.heading {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.heading h2{
+    font-family: "Lato";
+    margin: 10px;
+}
+
+.heading-white {
+    color: white;
+}
+
+.heading-primary {
+    color: var(--primary-color);
+}
+
+.heading h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1.5px;
+    text-align: center;
+    background-color: var(--primary-color);
+    transform: translateX(-50%);
+    left: 50%;
+    position: relative;
+    margin-top: 10px;
 }
 
 /* TOP NAV  */
@@ -87,7 +144,6 @@ h1,h2,h3,h4,h5,h6 {
 .navbar {
     background-color: transparent;
     padding: 20px 0;
-    position: fixed;
     width: 100%;
 }
   
@@ -120,3 +176,93 @@ h1,h2,h3,h4,h5,h6 {
     border: 2px solid var(--secondary-color);
     border-radius: 2px;
 }
+
+/* Hero  */
+.header {
+    background-color: #E8E8E7;
+    background-image: url("../images/bg1.png"), url("../images/bg2.png"),url("../images/bg3.png");
+    background-repeat: no-repeat;
+    background-position: 50% 120%,left,100% 20%;
+    background-size: 32%, 30%,30%;
+}
+
+.hero {
+    padding-bottom: 60px;
+    padding-top: 30px;
+}
+
+.hero .greeting {
+    font-size: 16px;
+}
+
+.hero h1 {
+    font-size: 22px;
+    line-height: 1.5;
+    background-image: url(../images/banner-text.png);
+    background-position: left 90%;
+    -webkit-background-clip: text;
+    margin: 10px 0;
+    color: transparent;
+}
+
+.hero .description{
+    background-color: #f1f1f1;
+    border: 2px solid #fff;
+    margin: 20px 0;
+}
+
+.hero .description p {
+    margin: 0;
+    padding: 15px;
+    color: var(--secondary-color);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.hero .time {
+    color: #504f4f;
+    font-size: 17px;
+    margin: 0;
+}
+
+.hero .location {
+    color: #757575;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* programs sections */
+.programs {
+    background:url("../images/programBg.png");
+    padding-bottom: 3rem;
+}
+
+.program-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 3rem;
+}
+
+.program {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(217, 217, 217, 0.15);
+    align-items: center;
+}
+
+.program p {
+    width: 50%;
+    color: #fff;
+}
+
+.program h3 {
+    width: 24%;
+    font-family: "Lato", sans-serif;
+}
+
+.program img {
+    width: 10%;
+}
+
