@@ -22,9 +22,7 @@
 body {
     margin: 0;
     font-family: "Lato", sans-serif;
-    background-color: #d3d3d3;
     text-decoration: none;
-    color: var(--primary-color);
 }
 
 a {
@@ -37,7 +35,7 @@ ul {
     padding: 0;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2 {
     font-family: "COCOGOOSE", sans-serif;
 }
 
@@ -48,8 +46,8 @@ h1,h2,h3,h4,h5,h6 {
 
 .container {
     max-width: 1170px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 14px;
+    padding-right: 14px;
     margin: 0 auto;
 }
 
@@ -88,6 +86,18 @@ h1,h2,h3,h4,h5,h6 {
     color: var(--primary-color);
 }
 
+.btn-more{
+    font-weight: 500;
+    display: block !important;
+    background: #fff;
+    border: 1px solid var(--font-color);
+    width: 100%;
+}
+
+.btn-more .fa {
+    color: var(--primary-color);
+}
+
 /* heading  */
 .heading {
     padding: 20px 0;
@@ -104,7 +114,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .heading-primary {
-    color: var(--primary-color);
+    color: #000;
 }
 
 .heading h2::after {
@@ -260,9 +270,84 @@ h1,h2,h3,h4,h5,h6 {
 .program h3 {
     width: 24%;
     font-family: "Lato", sans-serif;
+    color: var(--primary-color);
 }
 
 .program img {
     width: 10%;
 }
 
+/* speakers */
+.speakers {
+    padding-bottom: 3rem;
+}
+
+.speaker-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 2rem;
+}
+
+.speaker {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    width: 100%;
+}
+
+.speaker .speaker-image {
+    width: 31%;
+    position: relative;
+    margin-top: 15px;
+}
+
+.speaker .speaker-image::before {
+    content: "";
+    width: 70px;
+    height: 70px;
+    background-image: url(../images/sqbgDark.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -14px;
+    top: -14px;
+    z-index: -1;
+}
+
+.speaker .details {
+    width: 65%;
+}
+
+.speaker .details h3, h4 {
+    margin: 0;
+}
+
+.speaker .details h3 {
+    color: var(--secondary-color);
+}
+
+.speaker .details h4 {
+    color: var(--primary-color);
+    font-style: italic;
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+.speaker .details h4::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 1.5px;
+    text-align: center;
+    background-color: var(--bg-color);
+    margin-top: 12px;
+}
+
+.speaker .details p {
+    margin: 0;
+    padding-top: 6px;
+    font-size: 13px;
+    color: #1f1e1e;
+}
