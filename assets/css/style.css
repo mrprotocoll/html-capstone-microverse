@@ -35,7 +35,7 @@ a:active {
 }
 
 a.active {
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
 }
 
 a:hover {
@@ -96,7 +96,7 @@ h1,h2 {
 .btn-outline-primary{
     background: #fff;
     border: 5px solid var(--primary-color);
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
 }
 
 .btn-more{
@@ -199,6 +199,79 @@ h1,h2 {
     border: 2px solid var(--secondary-color);
     border-radius: 2px;
 }
+
+
+.show {
+    padding: 0 0 !important;
+  }
+  
+  .show .mobile-foreground {
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+  }
+  
+  .show .mobile-overlay {
+    background: var(--secondary-color);
+    mix-blend-mode: multiply;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 4;
+  }
+  
+  .show .nav {
+    padding-top: 20px;
+    display: block;
+    position: relative;
+    z-index: 6;
+  }
+  
+  .show .nav-link {
+    display: block;
+    clear: both;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    padding-top: 25px;
+  }
+  
+  .show .nav-link a {
+    color: #fff;
+    display: block;
+  }
+  
+  .show .nav-link li {
+    margin-bottom: 40px;
+    display: block;
+  }
+  
+  .show .bars {
+    float: right;
+    color: #fff;
+  }
+  
+  .show .bars .bar-item {
+    border-color: #fff;
+    border-radius: 2px;
+  }
+  
+  .show .bar-item:nth-of-type(2) {
+    display: none !important;
+  }
+  
+  .show .bars .bar-item:nth-of-type(3) {
+    rotate: -45deg;
+    margin-top: -3px;
+  }
+  
+  .show .bars .bar-item:nth-of-type(1) {
+    rotate: 45deg;
+    margin-top: 15px;
+  }
+  
 
 /* Hero  */
 .header {
