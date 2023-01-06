@@ -1,136 +1,136 @@
 @import url(global.css);
 
-.home-link{
-    display: block;
+.home-link {
+  display: block;
 }
 
 /* Hero  */
 .header {
-    background-color: #E8E8E7;
-    background-image: url("../images/bg1.png"), url("../images/bg2.png"),url("../images/bg3.png");
-    background-repeat: no-repeat;
-    background-position: 55% 123%,left,100% 20%;
-    background-size: 32%, 30%,30%;
-    min-height: 430px;
+  background-color: #e8e8e7;
+  background-image: url("../images/bg1.png"), url("../images/bg2.png"), url("../images/bg3.png");
+  background-repeat: no-repeat;
+  background-position: 55% 123%, left, 100% 20%;
+  background-size: 32%, 30%, 30%;
+  min-height: 430px;
 }
 
 .hero h1 {
-    font-size: 22px;
-    line-height: 1.5;
-    margin: 10px 0;
-    color: var(--primary-color);
+  font-size: 22px;
+  line-height: 1.5;
+  margin: 10px 0;
+  color: var(--primary-color);
 }
 
-.hero .description{
-    display: flex;
-    flex-direction: column;
-    background-color: #f1f1f1;
-    border: 2px solid #fff;
-    margin: 30px auto;
-    padding: 15px;
+.hero .description {
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  border: 2px solid #fff;
+  margin: 30px auto;
+  padding: 15px;
 }
 
 .desc-desktop {
-    display: none;
+  display: none;
 }
 
 .hero .location {
-    color: #757575;
-    margin: 0;
-    font-weight: bold;
-    font-size: 13px;
+  color: #757575;
+  margin: 0;
+  font-weight: bold;
+  font-size: 13px;
 }
 
 .hero .hero-mail {
-    color: var(--secondary-color);
-    margin: 0;
-    font-weight: bold;
-    text-decoration: underline;
+  color: var(--secondary-color);
+  margin: 0;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 /* graduation logo  */
-.event-logo{
-    width: 100%;
-    border-top: 2px solid var(--bg-color);
-    border-bottom: 2px solid var(--bg-color);
-    background-color: #fff;
-    padding-bottom: 3rem;
+.event-logo {
+  width: 100%;
+  border-top: 2px solid var(--bg-color);
+  border-bottom: 2px solid var(--bg-color);
+  background-color: #fff;
+  padding-bottom: 3rem;
 }
 
 .logo-section {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    margin: 0 auto;
-    border: 1px solid var(--bg-color);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto;
+  border: 1px solid var(--bg-color);
 }
 
 /* past events */
 .past-events {
-    background-color: #fff;
-    padding-bottom: 3rem;
+  background-color: #fff;
+  padding-bottom: 3rem;
 }
 
 .past-event {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    width: 85%;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 85%;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
-    /* navbar  */
-    .home-link{
-        display: none;
-    }
-    /* Hero  */
-    .header {
-        background-position: -30px 123%,left,100% 20%;
-        background-size: 25%, 30%,30%;
-        min-height: 430px;
-    }
+  /* navbar  */
+  .home-link {
+    display: none;
+  }
 
-    .hero .description{
-        width: 80%;
-    }
+  /* Hero  */
+  .header {
+    background-position: -30px 123%, left, 100% 20%;
+    background-size: 25%, 30%, 30%;
+    min-height: 430px;
+  }
 
-    .hero .greeting {
-        font-size: 25px;
-        margin: 0;
-    }
+  .hero .description {
+    width: 80%;
+  }
 
-    .desc-desktop {
-        display: block;
-    }
+  .hero .greeting {
+    font-size: 25px;
+    margin: 0;
+  }
 
-    /* logo section  */
-    .logo-section {
-        width: 35%;
-    }
+  .desc-desktop {
+    display: block;
+  }
 
-    .past-event {
-        grid-template-columns: 1fr 1fr;
-        width: 80%;
-    }
+  /* logo section  */
+  .logo-section {
+    width: 35%;
+  }
 
-    /* partners  */
-    .partners {
-        display: none;
-    }
+  .past-event {
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+  }
 
-    /* foooter  */
-    .footnote {
-        background-color: var(--secondary-color);
-        padding: 3rem 0;
-    }
+  /* partners  */
+  .partners {
+    display: none;
+  }
 
-    .footnote p {
-        color: var(--bg-color);
-    }
+  /* foooter  */
+  .footnote {
+    background-color: var(--secondary-color);
+    padding: 3rem 0;
+  }
 
-    .footnote a {
-        color: var(--bg-color);
-    }
+  .footnote p {
+    color: var(--bg-color);
+  }
 
+  .footnote a {
+    color: var(--bg-color);
+  }
 }
