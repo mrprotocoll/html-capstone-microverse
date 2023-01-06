@@ -284,7 +284,7 @@ h2 {
 
 /* Hero  */
 .header {
-  background-color: #e8e8e7;
+  background-color: #F7F7F7;
   background-image: url("../images/bg1.png"), url("../images/bg2.png"), url("../images/bg3.png");
   background-repeat: no-repeat;
   background-position: 55% 123%, left, 100% 20%;
@@ -387,6 +387,7 @@ h2 {
   /* navbar  */
   .navbar {
     background-color: white;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
   }
 
   .navbar .logo {

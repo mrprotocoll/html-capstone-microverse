@@ -13,7 +13,7 @@
 
 .hero h1 {
   font-size: 22px;
-  line-height: 1.5;
+  line-height: 1.2;
   background-image: url(../images/banner-text.png);
   background-position: left 90%;
   -webkit-background-clip: text;
@@ -43,14 +43,14 @@
 /* programs sections */
 .programs {
   background: url("../images/programBg.png");
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
 }
 
 .program-cards {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
 }
 
 .program {
@@ -59,17 +59,25 @@
   padding: 20px;
   background-color: rgba(217, 217, 217, 0.15);
   align-items: center;
+  cursor: pointer;
+  border: 2px solid rgba(217, 217, 217, 0.15);
+}
+
+.program:hover {
+    border: 2px solid #fff;
 }
 
 .program p {
   width: 50%;
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 .program h3 {
   width: 24%;
-  font-size: 16px;
+  font-size: 17px;
   font-family: "Lato", sans-serif;
   color: var(--primary-color);
 }
@@ -195,7 +203,7 @@ h4 {
     display: flex;
     flex-direction: row;
     gap: 4px;
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
   }
 
   .program {
@@ -203,17 +211,19 @@ h4 {
     display: block;
     justify-content: left;
     text-align: center;
-    padding: 20px 10px;
+    padding: 20px;
   }
 
   .program h3 {
     width: 100%;
     margin: 10px 0;
+    font-size: 20px;
   }
 
   .program p {
     width: 100%;
     margin: 0;
+    font-size: 16px;
   }
 
   .program img {

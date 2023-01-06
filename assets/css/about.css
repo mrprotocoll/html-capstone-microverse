@@ -7,7 +7,7 @@
 /* Hero  */
 .hero h1 {
   font-size: 22px;
-  line-height: 1.5;
+  line-height: 1.2;
   margin: 10px 0;
   color: var(--primary-color);
 }
