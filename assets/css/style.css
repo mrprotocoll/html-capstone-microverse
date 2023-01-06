@@ -27,6 +27,19 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--font-color);
+}
+
+a:active {
+    color: var(--primary-color);
+}
+
+a.active {
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--primary-color);
 }
 
 ul {
@@ -166,7 +179,7 @@ h1,h2 {
   
 .navbar .logo {
     display: none;
-    width: 30%;
+    width: 20%;
 }
 
 .nav-link {
@@ -203,7 +216,8 @@ h1,h2 {
 }
 
 .hero .greeting {
-    font-size: 16px;
+    font-size: 17px;
+    color: var(--primary-color);
 }
 
 .hero h1 {
@@ -258,7 +272,7 @@ h1,h2 {
 .program {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 20px;
     background-color: rgba(217, 217, 217, 0.15);
     align-items: center;
 }
@@ -278,14 +292,22 @@ h1,h2 {
     width: 10%;
 }
 
+.join {
+    display: inline-flex;
+}
+
+.see-programs {
+    display: none;
+}
+
 /* speakers */
 .speakers {
     padding-bottom: 3rem;
 }
 
 .speaker-cards {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 10px;
     padding-bottom: 2rem;
 }
@@ -379,24 +401,152 @@ h1,h2 {
 }
 
 /* footnote  */
-.footnote {
+.footnote { 
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
     padding: 2rem 0;
 }
 
-.footnote img{
-    width: 18%;
-    height: 40px;
+.footnote-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.copyright{
+    width: 100%;
+}
+
+.footnote .history {
+    display: none;
+}
+
+.footnote .logo{
+    width: 14%;
 }
 
 .footnote p {
-    width: 55%;
     font-size: 12px;
     color: var(--secondary-color);
 }
 
 .footnote a {
     color: var(--secondary-color);
+}
+
+@media screen and (min-width: 768px) {
+    /* top nav  */
+    .top-nav {
+        display: block;
+    }
+
+    /* navbar  */
+    .navbar {
+        background-color: white;
+    }
+
+    .navbar .logo {
+        display: block;
+    }
+
+    .nav-link {
+        display: flex;
+        column-gap: 40px;
+        align-items: center;
+    }  
+
+    .bars {
+        display: none;
+    }
+
+    /* Hero  */
+    .header {
+        background-image: url("../images/banner.jpg");
+        background-position: center;
+        background-size: cover;
+        min-height: 580px;
+    }
+
+    .hero .description{
+        width: 45%;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .hero .time {        
+        font-size: 20px;
+    }
+
+    /* programs sections */
+    .program-cards {
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+        padding-bottom: 3rem;
+    }
+
+    .program {
+        width: 20%;
+        display: block;
+        justify-content: left;
+        text-align: center;
+        padding: 20px 10px;
+    }
+    
+    .program h3 {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .program p {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .program img {
+        width: 20%;
+    }
+
+    .join {
+        display: none;
+    }
+
+    .see-programs {
+        display: block;
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    /* speakers */
+    .speaker-cards {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+    /* footnote  */
+    .footnote p {
+        font-size: 14px;
+    }
+
+    .footnote-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        gap: 30px;
+    }
+
+    .footnote .history {
+        display: block;
+    }
+
+    .footnote .logo{
+        width: 10%;
+    }
 }
