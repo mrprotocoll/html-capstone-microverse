@@ -8,6 +8,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
   - [🚀 Live Demo](#live-demo)
+  - [🚀 Project Live Presentation](#loom-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -61,6 +62,15 @@
 > Link to deployed project.
 
 - [Live Demo Link](https://mrprotocoll.github.io/first-capstone-microverse/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Project Presentation -->
+## Project Presentatio <a name="loom-demo"></a>
+
+> Link to Project Presentation.
+
+- [Loom Walkthrough Link](https://www.loom.com/share/1656210cf90147c7965e1e62a5e00273)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

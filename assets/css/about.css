@@ -5,15 +5,6 @@
 }
 
 /* Hero  */
-.header {
-  background-color: #e8e8e7;
-  background-image: url("../images/bg1.png"), url("../images/bg2.png"), url("../images/bg3.png");
-  background-repeat: no-repeat;
-  background-position: 55% 123%, left, 100% 20%;
-  background-size: 32%, 30%, 30%;
-  min-height: 430px;
-}
-
 .hero h1 {
   font-size: 22px;
   line-height: 1.5;
@@ -88,17 +79,12 @@
   /* Hero  */
   .header {
     background-position: -30px 123%, left, 100% 20%;
-    background-size: 25%, 30%, 30%;
+    background-size: 22%, 30%, 25%;
     min-height: 430px;
   }
 
   .hero .description {
     width: 80%;
-  }
-
-  .hero .greeting {
-    font-size: 25px;
-    margin: 0;
   }
 
   .desc-desktop {
@@ -126,11 +112,11 @@
     padding: 3rem 0;
   }
 
-  .footnote .copyright {
-    color: var(--bg-color);
+  .footnote .copyright p {
+    color: var(--bg-color) !important;
   }
 
   .footnote .author {
-    color: var(--bg-color);
+    color: var(--bg-color) !important;
   }
 }

@@ -44,6 +44,7 @@ a:hover {
 
 p {
   font-size: 13px;
+  color: var(--secondary-color);
 }
 
 ul {
@@ -288,7 +289,7 @@ h2 {
   background-image: url("../images/bg1.png"), url("../images/bg2.png"), url("../images/bg3.png");
   background-repeat: no-repeat;
   background-position: 55% 123%, left, 100% 20%;
-  background-size: 32%, 30%, 30%;
+  background-size: 28%, 30%, 30%;
   min-height: 430px;
 }
 
@@ -410,6 +411,8 @@ h2 {
 
   .hero .greeting {
     padding-top: 3rem;
+    font-size: 25px !important;
+    margin: 0;
   }
 
   /* partners  */
