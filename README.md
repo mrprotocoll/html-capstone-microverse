@@ -155,7 +155,7 @@ If you like this project, please don't forget to follow me and give it a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse, and Cindy Shin who is the owner of my project original template design.
+I would like to thank [Microverse](https://www.microverse.org/) , and [Cindy Shin](https://www.behance.net/adagio07) who is the owner of my project original template design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
