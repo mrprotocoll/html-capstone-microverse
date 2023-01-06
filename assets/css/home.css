@@ -244,4 +244,17 @@ h4 {
   .speaker .details h3 {
     font-size: 18px;
   }
+
+  .speaker .speaker-image::before {
+    content: "";
+    width: 70px;
+    height: 70px;
+    background-image: url(../images/sqbgGray.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -14px;
+    top: -14px;
+    z-index: -1;
+  }
 }
