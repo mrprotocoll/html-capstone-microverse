@@ -239,8 +239,8 @@ h1,h2 {
     display: block;
     clear: both;
     font-weight: 600;
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 22px;
+    line-height: 24px;
     padding-top: 25px;
   }
   
@@ -301,10 +301,10 @@ h1,h2 {
 
 .hero .description p {
     margin: 0;
-    padding: 15px;
     color: #6d6e70;
     font-size: 13px;
     font-weight: 700;
+    line-height: 1.6;
 }
 
 .hero .time {
@@ -406,13 +406,12 @@ h1,h2 {
 
     /* Hero  */
     .hero h1 {
-        font-size: 50px;
+        font-size: 50px !important;
     }
 
-    .hero .time {        
-        font-size: 20px;
+    .hero .greeting {
+        padding-top: 3rem;
     }
-
     /* partners  */
     .partners li {
         width: 18%;

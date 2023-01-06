@@ -1,5 +1,9 @@
 @import url(global.css);
 
+.home-link{
+    display: block;
+}
+
 /* Hero  */
 .header {
     background-color: #E8E8E7;
@@ -19,9 +23,15 @@
 
 .hero .description{
     display: flex;
+    flex-direction: column;
     background-color: #f1f1f1;
     border: 2px solid #fff;
     margin: 30px auto;
+    padding: 15px;
+}
+
+.desc-desktop {
+    display: none;
 }
 
 .hero .location {
@@ -70,22 +80,57 @@
 }
 
 @media screen and (min-width: 768px) {
-    
+    /* navbar  */
+    .home-link{
+        display: none;
+    }
     /* Hero  */
     .header {
         background-position: -30px 123%,left,100% 20%;
         background-size: 25%, 30%,30%;
         min-height: 430px;
     }
+
     .hero .description{
         width: 80%;
     }
 
-    .hero h1 {
-        font-size: 50px;
+    .hero .greeting {
+        font-size: 25px;
+        margin: 0;
     }
 
-    .hero .time {        
-        font-size: 20px;
+    .desc-desktop {
+        display: block;
     }
+
+    /* logo section  */
+    .logo-section {
+        width: 35%;
+    }
+
+    .past-event {
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+    }
+
+    /* partners  */
+    .partners {
+        display: none;
+    }
+
+    /* foooter  */
+    .footnote {
+        background-color: var(--secondary-color);
+        padding: 3rem 0;
+    }
+
+    .footnote p {
+        color: var(--bg-color);
+    }
+
+    .footnote a {
+        color: var(--bg-color);
+    }
+
 }

@@ -25,6 +25,7 @@
     background-color: #f1f1f1;
     border: 2px solid #fff;
     margin: 20px 0;
+    padding: 15px;
 }
 
 .hero .time {
@@ -162,7 +163,7 @@
 .speaker .details p {
     margin: 0;
     padding-top: 6px;
-    font-size: 12px;
+    font-size: 13px;
     color: #1f1e1e;
 }
 
@@ -170,22 +171,24 @@
 
     /* Hero  */
     .header {
+        background-color: white;
         background-image: url("../images/banner.jpg");
         background-position: center;
         background-size: cover;
         min-height: 580px;
+        padding-top: 5rem;
     }
 
     .hero .description{
-        width: 45%;
-    }
-
-    .hero h1 {
-        font-size: 50px;
+        width: 50%;
     }
 
     .hero .time {        
-        font-size: 20px;
+        font-size: 22px;
+    }
+
+    .hero .location {        
+        font-size: 17px;
     }
 
     /* programs sections */
@@ -236,5 +239,9 @@
 
     .speaker:nth-of-type(even) {
         display: flex;
+    }
+
+    .speaker .details h3 {
+        font-size: 18px;
     }
 }
