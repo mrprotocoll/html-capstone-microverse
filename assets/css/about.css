@@ -126,11 +126,11 @@
     padding: 3rem 0;
   }
 
-  .footnote p {
+  .footnote .copyright {
     color: var(--bg-color);
   }
 
-  .footnote a {
+  .footnote .author {
     color: var(--bg-color);
   }
 }
