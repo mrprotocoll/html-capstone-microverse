@@ -393,6 +393,10 @@ h1,h2 {
     width: 100%;
 }
 
+.speaker:nth-of-type(even) {
+    display: none;
+}
+
 .speaker .speaker-image {
     width: 31%;
     position: relative;
@@ -599,6 +603,10 @@ h1,h2 {
     .speaker-cards {
         grid-template-columns: 1fr 1fr;
         width: 100%;
+    }
+
+    .speaker:nth-of-type(even) {
+        display: flex;
     }
 
     /* footnote  */
