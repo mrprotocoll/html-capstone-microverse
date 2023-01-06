@@ -40,25 +40,25 @@ window.addEventListener('load', () => {
           name: 'Damilare Arikeusola',
           image: 'assets/images/speaker1.png',
           excerpt:
-            'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+            'A daily selection of privately personalized.',
           description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         },
         {
           id: '2',
           name: 'Ibrahim Babangida',
           image: 'assets/images/speaker2.png',
           excerpt:
-            'Experimental content creation feature that allows users to add to an existing.',
+            'Experimental content creation feature that.',
           description:
-            "When an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "When an unknown printer took a galley of type and scrambled.",
         },
         {
           id: '3',
           name: 'Mark Anderson',
           image: 'assets/images/speaker3.png',
           excerpt:
-            "Exploring the future of media in Facebook's first Virtual Reality app.",
+            "Exploring the future of media.",
           description:
             "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
         },
@@ -67,18 +67,18 @@ window.addEventListener('load', () => {
           name: 'Jolly Peters',
           image: 'assets/images/speaker4.png',
           excerpt:
-            'A smart assistant to make driving more safe, efficient, and fun.',
+            'A smart assistant to make driving more safe.',
           description:
-            "Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.",
+            "Lorem Ipsum han printer took a galley of type and scrambled.",
         },
         {
             id: '5',
             name: 'Will Smith',
             image: 'assets/images/speaker5.png',
             excerpt:
-              'A smart assistant to make driving more safe, efficient, and fun.',
+              'A smart assistant to make driving more safe.',
             description:
-              "Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.",
+              "Lorem Ipsum han printer took a galley of type and scrambled it 1960s.",
           },
           {
             id: '6',
@@ -87,7 +87,7 @@ window.addEventListener('load', () => {
             excerpt:
               'A smart assistant to make driving more safe, efficient, and fun.',
             description:
-              "Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.",
+              "Lorem Ipsum han printer took a galley of type and scrambled.",
           },
     ];
 

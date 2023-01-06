@@ -1,0 +1,240 @@
+@import url(global.css);
+
+/* Hero  */
+.hero {
+    padding-bottom: 60px;
+    padding-top: 30px;
+}
+
+.hero .greeting {
+    font-size: 17px;
+    color: var(--primary-color);
+}
+
+.hero h1 {
+    font-size: 22px;
+    line-height: 1.5;
+    background-image: url(../images/banner-text.png);
+    background-position: left 90%;
+    -webkit-background-clip: text;
+    margin: 10px 0;
+    color: transparent;
+}
+
+.hero .description{
+    background-color: #f1f1f1;
+    border: 2px solid #fff;
+    margin: 20px 0;
+}
+
+.hero .time {
+    color: #504f4f;
+    font-size: 17px;
+    margin: 0;
+}
+
+.hero .location {
+    color: #757575;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* programs sections */
+.programs {
+    background:url("../images/programBg.png");
+    padding-bottom: 3rem;
+}
+
+.program-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 3rem;
+}
+
+.program {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(217, 217, 217, 0.15);
+    align-items: center;
+}
+
+.program p {
+    width: 50%;
+    color: #fff;
+    font-size: 12px;
+}
+
+.program h3 {
+    width: 24%;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    color: var(--primary-color);
+}
+
+.program img {
+    width: 10%;
+    height: 50px;
+}
+
+.join {
+    display: inline-flex;
+}
+
+.see-programs {
+    display: none;
+}
+
+/* speakers */
+.speakers {
+    padding-bottom: 3rem;
+}
+
+.speaker-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding-bottom: 2rem;
+}
+
+.speaker {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    width: 100%;
+}
+
+.speaker:nth-of-type(even) {
+    display: none;
+}
+
+.speaker .speaker-image {
+    width: 31%;
+    position: relative;
+    margin-top: 15px;
+}
+
+.speaker .speaker-image::before {
+    content: "";
+    width: 70px;
+    height: 70px;
+    background-image: url(../images/sqbgDark.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -14px;
+    top: -14px;
+    z-index: -1;
+}
+
+.speaker .details {
+    width: 65%;
+}
+
+.speaker .details h3, h4 {
+    margin: 0;
+}
+
+.speaker .details h3 {
+    color: var(--secondary-color);
+    font-size: 15px;
+}
+
+.speaker .details h4 {
+    color: var(--primary-color);
+    font-style: italic;
+    margin-top: 6px;
+    font-size: 13px;
+}
+
+.speaker .details h4::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 1.5px;
+    text-align: center;
+    background-color: var(--bg-color);
+    margin-top: 12px;
+}
+
+.speaker .details p {
+    margin: 0;
+    padding-top: 6px;
+    font-size: 12px;
+    color: #1f1e1e;
+}
+
+@media screen and (min-width: 768px) {
+
+    /* Hero  */
+    .header {
+        background-image: url("../images/banner.jpg");
+        background-position: center;
+        background-size: cover;
+        min-height: 580px;
+    }
+
+    .hero .description{
+        width: 45%;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .hero .time {        
+        font-size: 20px;
+    }
+
+    /* programs sections */
+    .program-cards {
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+        padding-bottom: 3rem;
+    }
+
+    .program {
+        width: 20%;
+        display: block;
+        justify-content: left;
+        text-align: center;
+        padding: 20px 10px;
+    }
+    
+    .program h3 {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .program p {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .program img {
+        width: 20%;
+    }
+
+    .join {
+        display: none;
+    }
+
+    .see-programs {
+        display: block;
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    /* speakers */
+    .speaker-cards {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+    .speaker:nth-of-type(even) {
+        display: flex;
+    }
+}
